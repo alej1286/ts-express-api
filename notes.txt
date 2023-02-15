@@ -4,3 +4,11 @@ https://crew-code.com/node-express-typescript-sequelize-mysql-rest-api/
 npm install -g typescript
 tsc --init
 npm init
+
+npm install --save express body-parser sequelize sequelize-typescript mysql2
+
+npm install --save-dev nodemon
+
+npm install --save-dev @types/node
+npm install --save-dev @types/express
+
