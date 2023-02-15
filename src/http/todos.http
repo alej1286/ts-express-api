@@ -1,0 +1,34 @@
+# baseURL
+@baseURL = http://localhost:3000
+
+###
+# Find All Todos
+GET {{ baseURL }}/todos
+
+###
+# Find Todo By Id
+GET {{ baseURL }}/todos/1
+
+###
+# Create Todo
+POST {{ baseURL }}/todos
+Content-Type: application/json
+
+{
+    "name": "name 5",
+	"description": "description 5"
+}
+
+###
+# Modify Todo By Id
+PUT {{ baseURL }}/todos/2
+Content-Type: application/json
+
+{
+    "name": "name two",
+	"description": "description two"
+}
+
+###
+# Delete Todo By Id
+DELETE {{ baseURL }}/todos/1

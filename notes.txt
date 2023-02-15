@@ -1,6 +1,39 @@
 https://www.youtube.com/watch?v=UcwT1SAvxG0
 https://crew-code.com/node-express-typescript-sequelize-mysql-rest-api/
 
+
+
+//create DB
+docker run --name mymysql -e MYSQL_ROOT_PASSWORD=123456789 -e MYSQL_DATABASE=tasksdb -p 3306:3306 -d mysql
+// connect to db container
+docker exec -it mymysql bash
+//connect to mysql db
+mysql -u root --password
+
+// db conf
+
+
+CREATE DATABASE todos;
+
+USE todos;
+
+DROP TABLE todos;
+
+
+CREATE TABLE `todos` (
+  `id` int(11) AUTO_INCREMENT,
+  `name` varchar(150) DEFAULT NULL,
+  `description` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE todos (
+    id int,
+    name varchar(255),
+    description varchar(255)
+);
+
+
 npm install -g typescript
 tsc --init
 npm init
