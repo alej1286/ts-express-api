@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=UcwT1SAvxG0
+https://crew-code.com/node-express-typescript-sequelize-mysql-rest-api/
+
+npm install -g typescript
+tsc --init
+npm init
